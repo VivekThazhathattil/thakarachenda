@@ -1,0 +1,92 @@
+[
+  {
+    "id" : 1,
+    "name" : "Purple Yellow Red and Blue",
+    "artist" : "Portugal. The Man",
+    "address" : "https://www.youtube.com/watch?v=q5x_YoweEg8"
+  },
+
+  {
+    "id" : 2,
+    "name" : "The Adults are Talking",
+    "artist" : "The Strokes",
+    "address" : "https://www.youtube.com/watch?v=ewOPQZZn4SY"
+  },
+
+  {
+    "id" : 3,
+    "name" : "&Run",
+    "artist" : "Sir Sly",
+    "address" : "https://www.youtube.com/watch?v=jdoR7E7b4Mo"
+  },
+
+  {
+    "id" : 4,
+    "name" : "Dive",
+    "artist" : "Coast Modern",
+    "address" : "https://www.youtube.com/watch?v=-UUC8-hErZ4"
+  },
+
+  {
+    "id" : 5,
+    "name" : "Live in the Moment",
+    "artist" : "Portugal. The Man",
+    "address" : "https://www.youtube.com/watch?v=Hha0bwVvGmY"
+  },
+
+  {
+    "id" : 6,
+    "name" : "For Elise",
+    "artist" : "Saint Motel",
+    "address" : "https://www.youtube.com/watch?v=h6-h1gIwwSI"
+  },
+
+  {
+    "id" : 7,
+    "name" : "Sadaa Palaya",
+    "artist" : "Sudeep Kumar",
+    "address" : "https://www.youtube.com/watch?v=tt8WyEbIAkI"
+  },
+
+  {
+    "id" : 8,
+    "name" : "Varaha Nadhikarai",
+    "artist" : "Shankar Mahadevan",
+    "address" : "https://www.youtube.com/watch?v=l4BSEZ826V4"
+  },
+
+  {
+    "id" : 9,
+    "name" : "All the Stars",
+    "artist" : "Kendrick Lamar",
+    "address" : "https://www.youtube.com/watch?v=JQbjS0_ZfJ0"
+  },
+
+  {
+    "id" : 10,
+    "name" : "Rich Friends",
+    "artist" : "Portugal. The Man",
+    "address" : "https://www.youtube.com/watch?v=GN-xVSlnWKQ"
+  },
+
+  {
+    "id" : 11,
+    "name" : "Got It All",
+    "artist" : "Portugal. The Man",
+    "address" : "https://www.youtube.com/watch?v=mDYEzfXAnpY"
+  },
+
+  {
+    "id" : 12,
+    "name" : "Jupiter Mazha",
+    "artist" : "Dhanwin KB, Apoorva Sandhya",
+    "address" : "https://www.youtube.com/watch?v=7xQCCw5sbdY"
+  },
+
+  {
+    "id" : 13,
+    "name" : "Fire For You",
+    "artist" : "Canons",
+    "address" : "https://www.youtube.com/watch?v=DVOmxLxmXuY"
+  }
+]
