@@ -82,7 +82,7 @@ function LoadIndex(){
 
 	const years = Object.keys(ynm).reverse();
 	let outerDetails = [];
-	years.map( (year) =>{
+	years.forEach( (year) =>{
 		outerDetails.push(
 			<details key={year}>
 				<summary>{year}</summary>
@@ -164,7 +164,7 @@ function LoadSongData(){
 		<ul>
 		{
 			songs.map( (song, idx) =>{
-				return <li key={idx}><a href={song.address} target="_blank">{song.name + " - " + song.artist}</a></li>
+				return <li key={idx}><a href={song.address} target="_blank" rel="noreferrer">{song.name + " - " + song.artist}</a></li>
 			})	
 		}
 		</ul>
