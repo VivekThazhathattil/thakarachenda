@@ -105,7 +105,7 @@ function MakeParagraphs({text}){
 				}
 				else if(para.substring(1,4) === "LNK"){
 					const splitString = para.split("^");
-					return <a href={splitString[1]} target="_blank">{splitString[2]}</a>
+					return <a href={splitString[1]} target="_blank" rel="noreferrer">{splitString[2]}</a>
 				}
 				return <p></p>
 			})
