@@ -3,6 +3,7 @@ import Horsey from './data/horsey'
 import pi from './data/pi.png'
 import letter2me from './data/letter2me.png';
 import LoadIndex from './toc';
+import ScrollTop from "react-scrolltop-button";
 
 const data = require('./data/entries.json');
 const songs = require('./data/songs.json');
@@ -14,6 +15,7 @@ function App() {
 		<LoadIndex />
 		<LoadData />
 		<LoadSongData />
+		<ScrollTop text="^"/>
     </div>
   );
 }
@@ -100,6 +102,10 @@ function MakeParagraphs({text}){
 				else if(para.substring(1,4) === "PRE"){
 					const preStr = para.substring(5,)
 					return <PreElement key={idx} str={preStr} />
+				}
+				else if(para.substring(1,4) === "LNK"){
+					const splitString = para.split("^");
+					return <a href={splitString[1]} target="_blank">{splitString[2]}</a>
 				}
 				return <p></p>
 			})
