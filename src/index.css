@@ -121,6 +121,7 @@ p::first-letter {
   }
   img {
     max-width: 90vw;
+    margin: 5px;
   }
   .horsey {
     max-width: 50vw;

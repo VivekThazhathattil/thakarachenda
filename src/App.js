@@ -5,6 +5,13 @@ import letter2me from './data/letter2me.png';
 import LoadIndex from './toc';
 import ScrollTop from "react-scrolltop-button";
 
+import floodInside from './data/floodInside.jpg'
+import floodKrishna from './data/floodKrishna.jpg'
+import floodPayal from './data/floodPayal.jpg'
+import greenworld from './data/greenworld.jpg'
+import jump1 from './data/jump1.jpg'
+import jump2 from './data/jump2.jpg'
+
 const data = require('./data/entries.json');
 const songs = require('./data/songs.json');
 
@@ -81,6 +88,18 @@ function ImagesElement({imgKey}){
 		return <Horsey />
 	else if (imgKey === "pi")
 		return <img src={pi} alt="pi plot" />
+	else if(imgKey === "floodInside")
+		return <img src={floodInside} alt="Inside kakkodi house during flood" />
+	else if(imgKey === "floodKrishna")
+		return <img src={floodKrishna} alt="Exterior view of kakkodi house during flood" />
+	else if(imgKey === "floodPayal")
+		return <img src={floodPayal} alt="African paayal viewed from balcony" />
+	else if(imgKey === "greenworld")
+		return <img src={greenworld} alt="Green World view of Punoor Puzha" />
+	else if(imgKey === "jump1")
+		return <img src={jump1} alt="Me jumping into Punoor river while covering my nose" />
+	else if(imgKey === "jump2")
+		return <img src={jump2} alt="Another picture of me diving into punoor river" />
 }
 
 function PreElement({str}){
