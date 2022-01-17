@@ -74,11 +74,11 @@ function AssembleBlogDetails({year, month, day, time, title, text}){
 
 function ImagesElement({imgKey}){
 	if (imgKey === "letter2me")
-		return <img src={letter2me} />
+		return <img src={letter2me} alt="Letter to me from the future"/>
 	else if (imgKey === "horsey")
 		return <Horsey />
 	else if (imgKey === "pi")
-		return <img src={pi} />
+		return <img src={pi} alt="pi plot" />
 }
 
 function PreElement({str}){
@@ -90,7 +90,7 @@ function MakeParagraphs({text}){
 		<>
 		{
 			text.map( (para, idx) =>{
-				if(para[0] != '!'){
+				if(para[0] !== '!'){
 					return <p key={idx}>{para}</p>
 				}
 				else if (para.substring(1,4) === "IMG"){
@@ -101,6 +101,7 @@ function MakeParagraphs({text}){
 					const preStr = para.substring(5,)
 					return <PreElement key={idx} str={preStr} />
 				}
+				return <p></p>
 			})
 		}
 		</>
