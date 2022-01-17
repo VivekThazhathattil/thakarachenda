@@ -99,7 +99,7 @@ function ImagesElement({imgKey}){
 	else if(imgKey === "jump1")
 		return <img src={jump1} alt="Me jumping into Punoor river while covering my nose" />
 	else if(imgKey === "jump2")
-		return <img src={jump2} alt="Another picture of me diving into punoor river" />
+		return <img src={jump2} alt="Me diving into punoor river" />
 }
 
 function PreElement({str}){
