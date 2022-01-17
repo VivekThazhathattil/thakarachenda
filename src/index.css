@@ -95,7 +95,12 @@ pre {
 pre {
   border: solid 2px #c0c0c0;
   border-radius: 15px;
-  padding: 5px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 5px;
+  background: #e0dbb8;
+  color: black;
   overflow-x: auto !important;
   white-space: pre-wrap !important; /* Since CSS 2.1 */
   white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
