@@ -1,16 +1,8 @@
 import TinDrum from './data/tin-drum'
 import Horsey from './data/horsey'
-import pi from './data/pi.png'
-import letter2me from './data/letter2me.png';
+
 import LoadIndex from './toc';
 import ScrollTop from "react-scrolltop-button";
-
-import floodInside from './data/floodInside.jpg'
-import floodKrishna from './data/floodKrishna.jpg'
-import floodPayal from './data/floodPayal.jpg'
-import greenworld from './data/greenworld.jpg'
-import jump1 from './data/jump1.jpg'
-import jump2 from './data/jump2.jpg'
 
 const data = require('./data/entries.json');
 const songs = require('./data/songs.json');
@@ -82,24 +74,11 @@ function AssembleBlogDetails({year, month, day, time, title, text}){
 }
 
 function ImagesElement({imgKey}){
-	if (imgKey === "letter2me")
-		return <img src={letter2me} alt="Letter to me from the future"/>
-	else if (imgKey === "horsey")
+	const srcAlt = imgKey.split('_');
+	if (imgKey === "horsey")
 		return <Horsey />
-	else if (imgKey === "pi")
-		return <img src={pi} alt="pi plot" />
-	else if(imgKey === "floodInside")
-		return <img src={floodInside} alt="Inside kakkodi house during flood" />
-	else if(imgKey === "floodKrishna")
-		return <img src={floodKrishna} alt="Exterior view of kakkodi house during flood" />
-	else if(imgKey === "floodPayal")
-		return <img src={floodPayal} alt="African paayal viewed from balcony" />
-	else if(imgKey === "greenworld")
-		return <img src={greenworld} alt="Green World view of Punoor Puzha" />
-	else if(imgKey === "jump1")
-		return <img src={jump1} alt="Me jumping into Punoor river while covering my nose" />
-	else if(imgKey === "jump2")
-		return <img src={jump2} alt="Me diving into punoor river" />
+	else
+		return <img src={"/images/" + srcAlt[0]} alt={srcAlt[1]} />
 }
 
 function PreElement({str}){
@@ -124,7 +103,7 @@ function MakeParagraphs({text}){
 				}
 				else if(para.substring(1,4) === "LNK"){
 					const splitString = para.split("^");
-					return <a href={splitString[1]} target="_blank" rel="noreferrer">{splitString[2]}</a>
+					return <a key={idx} href={splitString[1]} target="_blank" rel="noreferrer">{splitString[2]}</a>
 				}
 				return <p></p>
 			})
