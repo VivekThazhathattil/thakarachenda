@@ -93,17 +93,17 @@ function MakeParagraphs({text}){
 				if(para[0] !== '!'){
 					return <p key={idx}>{para}</p>
 				}
-				else if (para.substring(1,4) === "IMG"){
-					const imgSrc = para.substring(5,)
-					return <ImagesElement key={idx} imgKey={imgSrc} />
-				}
-				else if(para.substring(1,4) === "PRE"){
-					const preStr = para.substring(5,)
-					return <PreElement key={idx} str={preStr} />
-				}
-				else if(para.substring(1,4) === "LNK"){
-					const splitString = para.split("^");
-					return <a key={idx} href={splitString[1]} target="_blank" rel="noreferrer">{splitString[2]}</a>
+				else{
+					const tagName = para.substring(1,4);
+					const feedString = para.substring(5,);
+					if (tagName === "IMG")
+						return <ImagesElement key={idx} imgKey={feedString} />
+					else if(tagName === "PRE")
+						return <PreElement key={idx} str={feedString} />
+					else if(tagName === "LNK"){
+						const splitString = para.split("^");
+						return <a key={idx} href={splitString[1]} target="_blank" rel="noreferrer">{splitString[2]}</a>
+					}
 				}
 				return <p></p>
 			})

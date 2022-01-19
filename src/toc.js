@@ -70,22 +70,19 @@ function LoadIndex(){
 													let ymd = "" + year + month + day;
 													return(
 														<li key={ymd}>
-															<details>
-																<summary>{day}</summary>
-																<ul>
-																	{
-																		ymdnt[ymd].map((title, idx) =>{
-																			return(
-																				<li key={ymd + "" + idx}>
-																					<a href={"#"+ ymd + ymdntime[ymd][idx]}>
-																					{title}
-																					</a>
-																				</li>
-																			)
-																		})
-																	}
-																</ul>
-															</details>
+															<ul>
+																{
+																	ymdnt[ymd].map((title, idx) =>{
+																		return(
+																			<li key={ymd + "" + idx}>
+																				<a href={"#"+ ymd + ymdntime[ymd][idx]}>
+																				{day}/{month} - {title}
+																				</a>
+																			</li>
+																		)
+																	})
+																}
+															</ul>
 														</li>
 													);
 												})
