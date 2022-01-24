@@ -48,13 +48,25 @@ function LoadSongData(){
 		<>
 		<h3 id="songs">പാട്ടുകൾ</h3>
 		<p>ഒരുപാട് കേൾക്കുമ്പോൾ ഞാൻ എന്റെ playlist-ൽ ഉള്ള പാട്ടുകൾ ഒക്കെ delete ചെയ്യും. എന്നിട്ട് ഇതുവരെ കേൾക്കാത്തതൊക്കെ തിരഞ്ഞു പിടിച്ച്‌ കേൾക്കും. ഒരിക്കൽ delete ചെയ്തുകഴിഞ്ഞ പാട്ട് പിന്നെ ആകസ്മികമായി തിരിച്ചു വരാറുണ്ട്. ഒരു പഴയ സുഹൃത്തിനെ പോലെ കണ്ട്, ലോഗ്യമൊക്കെ ചോദിച്ച് ഞാൻ അവന് പറയാനുള്ളത് വീണ്ടും കേൾക്കും. Unlike ചെയ്ത് delete ചെയ്യുന്നതിന് മുൻപ് ഞാൻ അവരുടെ പേരൊക്കെ ഇവിടെ ചേർക്കും. കാലം കുറെ കഴിയുമ്പോൾ അവരെയൊക്കെ വീണ്ടും വിളിച്ചു സൽക്കരിക്കാലോ.</p>
-		<ul>
+		<div className="grid-container">
 		{
 			songs.map( (song, idx) =>{
-				return <li key={idx}><a href={song.address} target="_blank" rel="noreferrer">{song.name + " - " + song.artist}</a></li>
+				return (
+					<div className="song-container" key={idx}>
+						<h3>
+						<a className="no-style" href={song.address} target="_blank" rel="noreferrer">
+						{song.name}						
+						</a>
+						</h3>
+						<hr />
+						<h4>
+						{song.artist}
+						</h4>
+					</div>
+				);
 			})	
 		}
-		</ul>
+		</div>
 		</>
 	)
 }

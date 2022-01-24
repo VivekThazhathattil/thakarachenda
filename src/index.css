@@ -9,12 +9,17 @@ body {
 }
 
 a:visited {
-  color: green;
+  color: #ff9999;
 }
 
 h1,
 h3,
 a:link {
+  color: #f1002a;
+}
+
+.no-style {
+  text-decoration: none;
   color: #f1002a;
 }
 
@@ -114,6 +119,27 @@ p::first-letter {
   color: #373738;
 }
 
+.song-container {
+  height: 70%;
+  width: 70%;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: #ffe6e9;
+  color: black;
+  margin: auto;
+  border: 2px solid #ffb3bb;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+hr {
+  border-top: 2px solid #f1002a;
+}
+
 @media (max-width: 780px) {
   body {
     width: 90%;
@@ -125,5 +151,8 @@ p::first-letter {
   }
   .horsey {
     max-width: 50vw;
+  }
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
   }
 }
