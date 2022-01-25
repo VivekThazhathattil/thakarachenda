@@ -3,14 +3,24 @@ import Horsey from './data/horsey'
 
 import LoadIndex from './toc';
 import ScrollTop from "react-scrolltop-button";
+import Stats from './stats';
 
 const data = require('./data/entries.json');
 const songs = require('./data/songs.json');
+
+const progLang = [
+	{name: "C/C++", amount: 7, color: "chocolate"}, 
+	{name: "Python", amount: 10, color: "crimson"},
+	{name: "Java", amount: 5, color: "darkolivegreen"},
+	{name: "Autism", amount: 23, color:"limegreen"},
+	{name: "Stupidity", amount: 95, color:"darkslateblue"}
+];
 
 function App() {
   return (
     <div className="App">
 		<LoadTitle />
+		<Stats stats={progLang}/>
 		<LoadIndex />
 		<LoadData />
 		<LoadSongData />
@@ -112,6 +122,8 @@ function MakeParagraphs({text}){
 						return <ImagesElement key={idx} imgKey={feedString} />
 					else if(tagName === "PRE")
 						return <PreElement key={idx} str={feedString} />
+					else if(tagName === "COD")
+						return <code key={idx}>{feedString}</code>
 					else if(tagName === "LNK"){
 						const splitString = para.split("^");
 						return <a key={idx} href={splitString[1]} target="_blank" rel="noreferrer">{splitString[2]}</a>

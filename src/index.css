@@ -130,6 +130,50 @@ p::first-letter {
   border: 2px solid #ffb3bb;
 }
 
+details > summary {
+  background: #ffe6e9;
+  color: #f1002a;
+  margin: 5px;
+  padding: 5px;
+  padding-left: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  max-width: 20%;
+}
+
+details > ul {
+  list-style: none;
+  margin: 0;
+}
+
+.stats-container {
+  max-width: 60%;
+  border: 5px solid #f1002a;
+  border-radius: 10px;
+  background: #ffccd5;
+}
+.stat {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin: 5px;
+}
+
+.stat-name {
+  border: 2px solid #f1002a;
+  border-radius: 10px;
+  background: white;
+  padding: 5px;
+}
+
+.stat-bar {
+  border: 1px solid black;
+  border-radius: 5px;
+  background: darkslateblue;
+  margin: 5px;
+  margin-right: 80%;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -152,6 +196,15 @@ hr {
   .horsey {
     max-width: 50vw;
   }
+
+  .stats-container {
+    max-width: 100%;
+  }
+
+  .stat {
+    grid-template-columns: 1fr 3fr;
+  }
+
   .grid-container {
     grid-template-columns: 1fr 1fr;
   }
