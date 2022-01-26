@@ -148,10 +148,11 @@ details > ul {
   border-radius: 10px;
   background: #ffccd5;
 }
+
 .stat {
   padding: 5px;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: minmax(0, 1fr) 4fr;
   margin: 5px;
 }
 
@@ -173,7 +174,7 @@ details > ul {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.5rem;
 }
 
@@ -199,10 +200,10 @@ hr {
   }
 
   .stat {
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: minmax(0, 1fr) 2.5fr;
   }
 
   .grid-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
