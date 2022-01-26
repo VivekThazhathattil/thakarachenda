@@ -23,10 +23,6 @@ a:link {
   color: #f1002a;
 }
 
-li {
-  max-width: 50vw;
-}
-
 table,
 th,
 td {
@@ -148,7 +144,7 @@ details > ul {
 
 .stats-container {
   max-width: 60%;
-  border: 5px solid #f1002a;
+  border: 2px solid #f1002a;
   border-radius: 10px;
   background: #ffccd5;
 }
@@ -160,15 +156,16 @@ details > ul {
 }
 
 .stat-name {
-  border: 2px solid #f1002a;
+  border: 1.75px solid #f1002a;
   border-radius: 10px;
   background: white;
   padding: 5px;
+  text-align: center;
 }
 
 .stat-bar {
-  border: 1px solid black;
-  border-radius: 5px;
+  border: 1.5px solid black;
+  border-radius: 2.5px;
   background: darkslateblue;
   margin: 5px;
   margin-right: 80%;

@@ -1,0 +1,29 @@
+[
+	{
+    "name": "C/C++", 
+    "amount": 15, 
+    "color": "chocolate"
+  }, 
+
+	{
+    "name": "Python",
+    "amount": 20,
+    "color": "crimson"
+  },
+
+	{
+    "name": "Java", 
+    "amount": 10, 
+    "color": "darkolivegreen"
+  },
+	{
+    "name": "ഓട്ടിസം", 
+    "amount": 32, 
+    "color":"limegreen"
+  },
+	{
+    "name": "മണ്ടത്തരം", 
+    "amount": 95, 
+    "color":"darkslateblue"
+  }
+]

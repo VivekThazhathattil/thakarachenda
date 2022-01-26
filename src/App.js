@@ -7,14 +7,7 @@ import Stats from './stats';
 
 const data = require('./data/entries.json');
 const songs = require('./data/songs.json');
-
-const progLang = [
-	{name: "C/C++", amount: 7, color: "chocolate"}, 
-	{name: "Python", amount: 10, color: "crimson"},
-	{name: "Java", amount: 5, color: "darkolivegreen"},
-	{name: "Autism", amount: 23, color:"limegreen"},
-	{name: "Stupidity", amount: 95, color:"darkslateblue"}
-];
+const progLang = require('./data/stats.json');
 
 function App() {
   return (
