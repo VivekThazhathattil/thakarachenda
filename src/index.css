@@ -11,7 +11,11 @@
   --sec-color:   #00ADB5;
   --main-bg:     #393E46;
   --sec-bg:      #222831;
-  --text-color:  white;
+  --text-color:  #d3d3d3;
+}
+
+h1{
+  font-size: 3rem;
 }
 
 body {
@@ -22,6 +26,13 @@ body {
   width: 60%;
   margin: auto;
   font-size: 1rem;
+}
+
+img{
+  border-radius: 20px;
+  box-shadow: 5px 5px 2.5px var(--sec-bg);
+  margin: 5px;
+  max-height: 400px;
 }
 
 a:visited {
@@ -140,6 +151,7 @@ p::first-letter {
   background: var(--sec-bg);
   color: var(--text-color);
   margin: auto;
+  box-shadow: 5px 5px 2.5px 2.5px var(--sec-color);
 }
 
 details > summary {
@@ -150,7 +162,7 @@ details > summary {
   padding-left: 20px;
   border-radius: 20px;
   cursor: pointer;
-  max-width: 20%;
+  max-width: 50%;
 }
 
 details > ul {
