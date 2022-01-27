@@ -59,10 +59,10 @@ function LoadIndex(){
 				<summary>{year}</summary>
 				<ul style={{"listStyleType": "none"}}>
 					{
-						// get the number of entries for a month
 						ynm[year].map( (month) =>{
+						// get the number of entries for a month
 							let numEntries = 0;
-							ymnd[year + "" + month].map( (day) => {
+							ymnd[year + "" + month].forEach( (day) => {
 								let ymd = "" + year + month + day;
 								numEntries += ymdnt[ymd].length;
 							});
