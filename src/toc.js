@@ -59,18 +59,25 @@ function LoadIndex(){
 				<summary>{year}</summary>
 				<ul style={{"listStyleType": "none"}}>
 					{
+						// get the number of entries for a month
 						ynm[year].map( (month) =>{
+							let numEntries = 0;
+							ymnd[year + "" + month].map( (day) => {
+								let ymd = "" + year + month + day;
+								numEntries += ymdnt[ymd].length;
+							});
+						// --------
 							return(
 								<li key={ year + "" + month}>
 									<details>
-										<summary>{num2Str_month[month]}</summary>
+										<summary>{num2Str_month[month] + " (" + numEntries +")"}</summary>
 										<ul style={{"listStyleType": "none"}}>
 											{
 												ymnd[year + "" + month].map( (day) =>{
 													let ymd = "" + year + month + day;
 													return(
 														<li key={ymd}>
-															<ul>
+															<ul style={{"listStyleType": "none"}}>
 																{
 																	ymdnt[ymd].map((title, idx) =>{
 																		return(
@@ -97,7 +104,6 @@ function LoadIndex(){
 			</details>
 		)
 	})
-	//console.log(years);
 
  return (
 	 <ul>

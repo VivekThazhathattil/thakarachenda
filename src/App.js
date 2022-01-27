@@ -17,15 +17,7 @@ function App() {
 		<LoadIndex />
 		<LoadData />
 		<LoadSongData />
-		<ScrollTop 
-			text="^"
-			style={{
-				backgroundColor: "#ff9999",
-				border: "5px solid #ff8095", 
-				borderRadius: "50px", 
-				color:"#f1002a"
-			}}
-			/>
+		<ScrollTop text="^" />
     </div>
   );
 }
