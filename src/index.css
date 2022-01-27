@@ -14,8 +14,16 @@
   --text-color:  #d3d3d3;
 }
 
+@font-face {
+  font-family: 'karumbi';
+  src: 
+    url('data/karumbi.ttf')
+    format('truetype');
+}
+
 h1{
-  font-size: 3rem;
+  font-family: 'karumbi';
+  font-size: 10rem;
 }
 
 body {
@@ -214,6 +222,11 @@ hr {
     width: 90%;
     margin: auto;
   }
+
+  h1{
+    font-size: 6.5rem;
+  }
+
   img {
     max-width: 90vw;
     margin: 5px;
