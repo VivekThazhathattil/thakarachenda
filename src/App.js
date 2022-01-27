@@ -121,6 +121,15 @@ function MakeParagraphs({text}){
 						const splitString = para.split("^");
 						return <a key={idx} href={splitString[1]} target="_blank" rel="noreferrer">{splitString[2]}</a>
 					}
+					else if(tagName === "QUE"){
+						const splitString = feedString.split("_");
+						return (
+							<details>
+								<summary>{splitString[0]}</summary>
+								<i><u>{splitString[1]}</u></i>
+							</details>
+						);
+					}
 				}
 				return <p></p>
 			})
