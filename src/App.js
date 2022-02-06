@@ -117,6 +117,8 @@ function MakeParagraphs({text}){
 						return <PreElement key={idx} str={feedString} />
 					else if(tagName === "COD")
 						return <code key={idx}>{feedString}</code>
+					else if(tagName === "HED")
+						return <h3 key={idx}><u>{feedString}</u></h3>
 					else if(tagName === "LNK"){
 						const splitString = para.split("^");
 						return <a key={idx} href={splitString[1]} target="_blank" rel="noreferrer">{splitString[2]}</a>
