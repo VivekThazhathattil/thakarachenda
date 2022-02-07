@@ -8,6 +8,14 @@ export const darkTheme = {
   textColor:  "#d3d3d3",
 };
 
+export const plainTheme = {
+  mainColor:  "black",
+  secColor:   "black",
+  mainBg:     "#fff",
+  secBg:      "#f2f2f2",
+  textColor:  "black",
+};
+
 export const cherryTheme = {
   mainColor:  "#F1002A",
   secColor:   "#cc0022",

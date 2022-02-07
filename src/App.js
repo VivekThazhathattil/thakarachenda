@@ -8,12 +8,13 @@ import Stats from './stats';
 import { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { 
+	plainTheme,
 	cherryTheme,
 	darkTheme,
 	paperTheme,
 	amoledTheme,
 	greenTheme,
-	GlobalStyles 
+	GlobalStyles
 } from './themes';
 
 const data = require('./data/entries.json');
@@ -28,6 +29,9 @@ function App() {
 
 	const themeToggler = (themeString) =>{
 		switch(themeString){
+			case "plain":
+				setTheme("plain");
+				break;
 			case "paper":
 				setTheme("paper");
 				break;
@@ -50,6 +54,8 @@ function App() {
 
 	const applyTheme = () =>{
 		switch(theme){
+			case "plain":
+				return plainTheme;
 			case "paper":
 				return paperTheme;
 			case "cherry":
@@ -69,11 +75,12 @@ function App() {
 		<ThemeProvider theme={() => applyTheme()}>
 			<GlobalStyles />
     	<StyledApp className="App">
-				<button className="color-icon" style={{background: '#7B5537'}} onClick={() => themeToggler('paper')} />
-				<button className="color-icon" style={{background: '#cc0022'}} onClick={() => themeToggler('cherry')} />
-				<button className="color-icon" style={{background: '#2F5233'}} onClick={() => themeToggler('green')} />
-				<button className="color-icon" style={{background: '#00ADB5'}} onClick={() => themeToggler('dark')} />
-				<button className="color-icon" style={{background: '#808080'}} onClick={() => themeToggler('amoled')} />
+				<button className="color-icon" style={{background: '#7B5537', borderColor: 'white'}} onClick={() => themeToggler('paper')} />
+				<button className="color-icon" style={{background: '#e6e6e6', borderColor: 'white'}} onClick={() => themeToggler('plain')} />
+				<button className="color-icon" style={{background: '#cc0022', borderColor: 'white'}} onClick={() => themeToggler('cherry')} />
+				<button className="color-icon" style={{background: '#2F5233', borderColor: 'white'}} onClick={() => themeToggler('green')} />
+				<button className="color-icon" style={{background: '#00ADB5', borderColor: 'white'}} onClick={() => themeToggler('dark')} />
+				<button className="color-icon" style={{background: '#808080', borderColor: 'white'}} onClick={() => themeToggler('amoled')} />
 			<	LoadTitle />
 			<	Stats stats={progLang}/>
 			<	LoadIndex />
