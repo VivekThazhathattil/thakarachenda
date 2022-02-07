@@ -134,7 +134,7 @@ pre {
 }
 
 pre {
-  border: solid 2px var(--main-color);
+  border-left: solid 2px var(--sec-color);
   border-radius: 15px;
   padding-left: 20px;
   padding-bottom: 20px;

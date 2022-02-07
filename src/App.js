@@ -111,26 +111,28 @@ function MakeParagraphs({text}){
 				else{
 					const tagName = para.substring(1,4);
 					const feedString = para.substring(5,);
-					if (tagName === "IMG")
-						return <ImagesElement key={idx} imgKey={feedString} />
-					else if(tagName === "PRE")
-						return <PreElement key={idx} str={feedString} />
-					else if(tagName === "COD")
-						return <code key={idx}>{feedString}</code>
-					else if(tagName === "HED")
-						return <h3 key={idx}><u>{feedString}</u></h3>
-					else if(tagName === "LNK"){
-						const splitString = para.split("^");
-						return <a key={idx} href={splitString[1]} target="_blank" rel="noreferrer">{splitString[2]}</a>
-					}
-					else if(tagName === "QUE"){
-						const splitString = feedString.split("_");
-						return (
-							<details>
-								<summary>{splitString[0]}</summary>
-								<i><u>{splitString[1]}</u></i>
-							</details>
-						);
+					switch(tagName){
+						case "IMG":
+							return <ImagesElement key={idx} imgKey={feedString} />
+						case "PRE":
+							return <PreElement key={idx} str={feedString} />
+						case "COD":
+							return <code key={idx}>{feedString}</code>
+						case "HED":
+							return <h3 key={idx}><u>{feedString}</u></h3>
+						case "LNK":
+							const splitString = para.split("^");
+							return <a key={idx} href={splitString[1]} target="_blank" rel="noreferrer">{splitString[2]}</a>
+						case "QUE":
+							const splitStr = feedString.split("_");
+							return (
+								<details>
+									<summary>{splitStr[0]}</summary>
+									<i><u>{splitStr[1]}</u></i>
+								</details>
+							);
+						default:
+							return <p></p>
 					}
 				}
 				return <p></p>
