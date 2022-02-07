@@ -48,13 +48,13 @@ img{
 }
 
 a:visited {
-  color: var(--sec-color);
+  color: var(--main-color);
 }
 
 h1,
 h3,
 a:link {
-  color: var(--main-color);
+  color: var(--sec-color);
 }
 
 .no-style {
@@ -127,6 +127,10 @@ details {
 p,
 pre {
   color: var(--text-color);
+}
+
+code{
+  color: var(--sec-color);
 }
 
 .border {
