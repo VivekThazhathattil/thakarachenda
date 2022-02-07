@@ -135,7 +135,6 @@ function MakeParagraphs({text}){
 							return <p></p>
 					}
 				}
-				return <p></p>
 			})
 		}
 		</>
