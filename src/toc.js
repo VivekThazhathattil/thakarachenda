@@ -3,18 +3,18 @@ import * as React from "react"
 const data = require('./data/entries.json');
 
 const num2Str_month = {
-	"1": "January",
-	"2": "February",
-	"3": "March",
-	"4": "April",
-	"5": "May",
-	"6": "June",
-	"7": "July",
-	"8": "August",
-	"9": "September",
-	"10": "October",
-	"11": "November",
-	"12": "December"
+	"1": "ജനുവരി",
+	"2": "ഫെബ്രുവരി",
+	"3": "മാർച്ച്",
+	"4": "ഏപ്രിൽ",
+	"5": "മെയ്",
+	"6": "ജൂൺ",
+	"7": "ജൂലായ്",
+	"8": "ആഗസ്റ്റ്",
+	"9": "സെപ്‌റ്റംബർ",
+	"10": "ഒക്ടോബർ",
+	"11": "നവംബർ",
+	"12": "ഡിസംബർ"
 }
 
 const addEntry = (obj, key, val) => {

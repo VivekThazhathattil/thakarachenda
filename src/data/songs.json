@@ -109,6 +109,20 @@
     "name" : "Borderline",
     "artist" : "Tame Impala",
     "address" : "https://www.youtube.com/watch?v=2g5xkLqIElU"
+  },
+
+  {
+    "id" : 17,
+    "name" : "Cold Heart",
+    "artist" : "Elton John, Dua Lipa",
+    "address" : "https://www.youtube.com/watch?v=qod03PVTLqk"
+  },
+
+  {
+    "id" : 18,
+    "name" : "Sincere",
+    "artist" : "Jazzanova",
+    "address" : "https://www.youtube.com/watch?v=oD_ndUrhn30"
   }
 
 ]

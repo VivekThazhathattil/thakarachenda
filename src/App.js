@@ -5,20 +5,83 @@ import LoadIndex from './toc';
 import ScrollTop from "react-scrolltop-button";
 import Stats from './stats';
 
+import { useState } from 'react';
+import styled, { ThemeProvider } from 'styled-components';
+import { 
+	cherryTheme,
+	darkTheme,
+	paperTheme,
+	amoledTheme,
+	greenTheme,
+	GlobalStyles 
+} from './themes';
+
 const data = require('./data/entries.json');
 const songs = require('./data/songs.json');
 const progLang = require('./data/stats.json');
 
+const StyledApp = styled.div``;
+
 function App() {
+
+	const [theme, setTheme] = useState("paper");
+
+	const themeToggler = (themeString) =>{
+		switch(themeString){
+			case "paper":
+				setTheme("paper");
+				break;
+			case "cherry":
+				setTheme("cherry");
+				break;
+			case "green":
+				setTheme("green");
+				break;
+			case "dark":
+				setTheme("dark");
+				break;
+			case "amoled":
+				setTheme("amoled");
+				break;
+			default:
+				setTheme("paper");
+		}
+	};
+
+	const applyTheme = () =>{
+		switch(theme){
+			case "paper":
+				return paperTheme;
+			case "cherry":
+				return cherryTheme;
+			case "green":
+				return greenTheme;
+			case "dark":
+				return darkTheme;
+			case "amoled":
+				return amoledTheme;
+			default:
+				return darkTheme;
+		}
+	}
+
   return (
-    <div className="App">
-		<LoadTitle />
-		<Stats stats={progLang}/>
-		<LoadIndex />
-		<LoadData />
-		<LoadSongData />
-		<ScrollTop text="^" />
-    </div>
+		<ThemeProvider theme={() => applyTheme()}>
+			<GlobalStyles />
+    	<StyledApp className="App">
+				<button className="color-icon" style={{background: '#7B5537'}} onClick={() => themeToggler('paper')} />
+				<button className="color-icon" style={{background: '#cc0022'}} onClick={() => themeToggler('cherry')} />
+				<button className="color-icon" style={{background: '#2F5233'}} onClick={() => themeToggler('green')} />
+				<button className="color-icon" style={{background: '#00ADB5'}} onClick={() => themeToggler('dark')} />
+				<button className="color-icon" style={{background: '#808080'}} onClick={() => themeToggler('amoled')} />
+			<	LoadTitle />
+			<	Stats stats={progLang}/>
+			<	LoadIndex />
+			<	LoadData />
+			<	LoadSongData />
+			<	ScrollTop text="^" />
+    	</StyledApp>
+		</ThemeProvider>
   );
 }
 
@@ -28,7 +91,7 @@ const LoadTitle = () =>{
 			<h1>തകരച്ചെണ്ട</h1>
 			<div className="half_half">
 				<h5 className="subtitle">"അറിയാത്ത അത്ഭുതങ്ങളെ ഗർഭത്തിൽ വഹിക്കുന്ന മഹാസമുദ്രങ്ങളെക്കാൾ അറിയുന്ന നിളാനദിയെയാണ് എനിക്ക് ഇഷ്ടം" - എം ടി  വാസുദേവൻ നായർ</h5>
-				<TinDrum className="tin_drum" />
+				<TinDrum className="tin-drum" />
 			</div>
 		</>
 	);
@@ -126,7 +189,7 @@ function MakeParagraphs({text}){
 						case "QUE":
 							const splitStr = feedString.split("_");
 							return (
-								<details>
+								<details key={idx}>
 									<summary>{splitStr[0]}</summary>
 									<i><u>{splitStr[1]}</u></i>
 								</details>

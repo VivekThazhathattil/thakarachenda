@@ -81,10 +81,9 @@ td {
   padding-bottom: 1.5rem;
 }
 
-.tin_drum {
+.tin-drum {
   max-width: 200px;
   max-height: 200px;
-  color: var(--main-bg);
 }
 
 .horsey {
@@ -167,7 +166,7 @@ p::first-letter {
   background: var(--sec-bg);
   color: var(--text-color);
   margin: auto;
-  box-shadow: 5px 5px 2.5px 2.5px var(--sec-color);
+  box-shadow: 2px 2px 0.5px 0.5px var(--sec-color);
 }
 
 details > summary {
@@ -223,6 +222,13 @@ details > ul {
 
 hr {
   border-top: 2px solid var(--main-color);
+}
+
+.color-icon{
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid var(--main-bg);
+  border-radius: 100px;
 }
 
 @media (max-width: 780px) {
