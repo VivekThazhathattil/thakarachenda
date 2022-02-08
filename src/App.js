@@ -124,8 +124,12 @@ function LoadSongData(){
 		<div className="grid-container">
 		{
 			songs.map( (song, idx) =>{
+				const divStyle = {
+						backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url("/images/album_covers/` + song.coverimg + `")`,
+						color: "white",
+				}
 				return (
-					<div className="song-container" key={idx}>
+					<div className="song-container" style={divStyle} key={idx}>
 						<h3>
 						<a className="no-style" href={song.address} target="_blank" rel="noreferrer">
 						{song.name}						

@@ -19,7 +19,7 @@ export const plainTheme = {
 export const cherryTheme = {
   mainColor:  "#F1002A",
   secColor:   "#cc0022",
-  mainBg:     "#F1F1F1",
+  mainBg:     "#ffe6e6",
   secBg:      "#FFCCD5",
   textColor:  "#444445",
 };
@@ -35,7 +35,7 @@ export const paperTheme = {
 export const greenTheme = {
   mainColor:  "#76B947",
   secColor:   "#2F5233",
-  mainBg:     "#F1F1F1",
+  mainBg:     " #e6ffe6",
   secBg:      "#B1D8B7",
   textColor:  "#444445",
 }
@@ -49,8 +49,7 @@ export const amoledTheme = {
 }
 
 export const GlobalStyles = createGlobalStyle`
-  a:visited,
-  .no-style,
+  a:link,
   .tags
   {
     color: ${props => props.theme.mainColor}
@@ -65,7 +64,7 @@ export const GlobalStyles = createGlobalStyle`
     border-top-color: ${props => props.theme.mainColor}
   }
   /* ---------------------------------------------------- */
-  a:link,
+  a:visited,
   code,
   p::first-letter,
   h1,
@@ -83,6 +82,7 @@ export const GlobalStyles = createGlobalStyle`
   } 
   /* ---------------------------------------------------- */
   body,
+  .no-style,
   .stat-name{
     background: ${props => props.theme.mainBg}
   }
@@ -109,9 +109,11 @@ export const GlobalStyles = createGlobalStyle`
   pre,
   .song-container,
   .stat-name,
+  .no-style,
   details > summary
   {
     color: ${props => props.theme.textColor}
   }
+  /* ---------------------------------------------------- */
 
 `;

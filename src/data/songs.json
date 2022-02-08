@@ -3,126 +3,144 @@
     "id" : 1,
     "name" : "Purple Yellow Red and Blue",
     "artist" : "Portugal. The Man",
-    "address" : "https://www.youtube.com/watch?v=q5x_YoweEg8"
+    "address" : "https://www.youtube.com/watch?v=q5x_YoweEg8",
+    "coverimg" : "pyrb.jpeg"
   },
 
   {
     "id" : 2,
     "name" : "The Adults are Talking",
     "artist" : "The Strokes",
-    "address" : "https://www.youtube.com/watch?v=ewOPQZZn4SY"
+    "address" : "https://www.youtube.com/watch?v=ewOPQZZn4SY",
+    "coverimg" : "adults.png"
   },
 
   {
     "id" : 3,
     "name" : "&Run",
     "artist" : "Sir Sly",
-    "address" : "https://www.youtube.com/watch?v=jdoR7E7b4Mo"
+    "address" : "https://www.youtube.com/watch?v=jdoR7E7b4Mo",
+    "coverimg" : "run.jpeg"
   },
 
   {
     "id" : 4,
     "name" : "Dive",
     "artist" : "Coast Modern",
-    "address" : "https://www.youtube.com/watch?v=-UUC8-hErZ4"
+    "address" : "https://www.youtube.com/watch?v=-UUC8-hErZ4",
+    "coverimg" : "dive.jpg"
   },
 
   {
     "id" : 5,
     "name" : "Live in the Moment",
     "artist" : "Portugal. The Man",
-    "address" : "https://www.youtube.com/watch?v=Hha0bwVvGmY"
+    "address" : "https://www.youtube.com/watch?v=Hha0bwVvGmY",
+    "coverimg" : "litm.jpeg"
   },
 
   {
     "id" : 6,
     "name" : "For Elise",
     "artist" : "Saint Motel",
-    "address" : "https://www.youtube.com/watch?v=h6-h1gIwwSI"
+    "address" : "https://www.youtube.com/watch?v=h6-h1gIwwSI",
+    "coverimg" : "elise.jpg"
   },
 
   {
     "id" : 7,
     "name" : "സദാ പാലയ",
     "artist" : "Sudeep Kumar",
-    "address" : "https://www.youtube.com/watch?v=tt8WyEbIAkI"
+    "address" : "https://www.youtube.com/watch?v=tt8WyEbIAkI",
+    "coverimg" : "palaya.jpg"
   },
 
   {
     "id" : 8,
     "name" : "Varaha Nadhikarai",
     "artist" : "Shankar Mahadevan",
-    "address" : "https://www.youtube.com/watch?v=l4BSEZ826V4"
+    "address" : "https://www.youtube.com/watch?v=l4BSEZ826V4",
+    "coverimg" : "varaha.jpg"
   },
 
   {
     "id" : 9,
     "name" : "All the Stars",
     "artist" : "Kendrick Lamar",
-    "address" : "https://www.youtube.com/watch?v=JQbjS0_ZfJ0"
+    "address" : "https://www.youtube.com/watch?v=JQbjS0_ZfJ0",
+    "coverimg" : "stars.jpeg"
   },
 
   {
     "id" : 10,
     "name" : "Rich Friends",
     "artist" : "Portugal. The Man",
-    "address" : "https://www.youtube.com/watch?v=GN-xVSlnWKQ"
+    "address" : "https://www.youtube.com/watch?v=GN-xVSlnWKQ",
+    "coverimg" : "rich_friends.jpeg"
   },
 
   {
     "id" : 11,
     "name" : "Got It All",
     "artist" : "Portugal. The Man",
-    "address" : "https://www.youtube.com/watch?v=mDYEzfXAnpY"
+    "address" : "https://www.youtube.com/watch?v=mDYEzfXAnpY",
+    "coverimg" : "got_it_all.jpeg"
   },
 
   {
     "id" : 12,
     "name" : "ജൂപിറ്റർ മഴ",
     "artist" : "Dhanwin KB, Apoorva Sandhya",
-    "address" : "https://www.youtube.com/watch?v=7xQCCw5sbdY"
+    "address" : "https://www.youtube.com/watch?v=7xQCCw5sbdY",
+    "coverimg" : "jupiter_mazha.jpeg"
   },
 
   {
     "id" : 13,
     "name" : "Fire For You",
     "artist" : "Canons",
-    "address" : "https://www.youtube.com/watch?v=DVOmxLxmXuY"
+    "address" : "https://www.youtube.com/watch?v=DVOmxLxmXuY",
+    "coverimg" : "fire_for_you.jpeg"
   },
 
   {
     "id" : 14,
     "name" : "കുഗ്രാമമേ - മിന്നൽ മുരളി",
     "artist" : "Sushin Shyam",
-    "address" : "https://www.youtube.com/watch?v=ZY3oaQQVri4"
+    "address" : "https://www.youtube.com/watch?v=ZY3oaQQVri4",
+    "coverimg" : "minnal_murali.jpeg"
   },
 
   {
     "id" : 15,
     "name" : "ചില്ലാണേ - 22 Female Kottayam",
     "artist" : "Avial",
-    "address" : "https://www.youtube.com/watch?v=vXDpel2qxmY"
+    "address" : "https://www.youtube.com/watch?v=vXDpel2qxmY",
+    "coverimg" : "22_female_kottayam.jpeg"
   },
 
   {
     "id" : 16,
     "name" : "Borderline",
     "artist" : "Tame Impala",
-    "address" : "https://www.youtube.com/watch?v=2g5xkLqIElU"
+    "address" : "https://www.youtube.com/watch?v=2g5xkLqIElU",
+    "coverimg" : "borderline.jpeg"
   },
 
   {
     "id" : 17,
     "name" : "Cold Heart",
     "artist" : "Elton John, Dua Lipa",
-    "address" : "https://www.youtube.com/watch?v=qod03PVTLqk"
+    "address" : "https://www.youtube.com/watch?v=qod03PVTLqk",
+    "coverimg" : "cold_heart.jpeg"
   },
 
   {
     "id" : 18,
     "name" : "Sincere",
     "artist" : "Jazzanova",
-    "address" : "https://www.youtube.com/watch?v=oD_ndUrhn30"
+    "address" : "https://www.youtube.com/watch?v=oD_ndUrhn30",
+    "coverimg" : "sincere.jpeg"
   }
 
 ]
