@@ -141,6 +141,14 @@
     "artist" : "Jazzanova",
     "address" : "https://www.youtube.com/watch?v=oD_ndUrhn30",
     "coverimg" : "sincere.jpeg"
+  },
+
+  {
+    "id" : 19,
+    "name" : "Désolé",
+    "artist" : "Gorillaz ft. Fatoumata Diawara",
+    "address" : "https://www.youtube.com/watch?v=r1DR3s_esLE",
+    "coverimg" : "desole.jpeg"
   }
 
 ]
