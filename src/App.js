@@ -28,28 +28,11 @@ function App() {
 	const [theme, setTheme] = useState("paper");
 
 	const themeToggler = (themeString) =>{
-		switch(themeString){
-			case "plain":
-				setTheme("plain");
-				break;
-			case "paper":
-				setTheme("paper");
-				break;
-			case "cherry":
-				setTheme("cherry");
-				break;
-			case "green":
-				setTheme("green");
-				break;
-			case "dark":
-				setTheme("dark");
-				break;
-			case "amoled":
-				setTheme("amoled");
-				break;
-			default:
-				setTheme("paper");
-		}
+		const allThemes = ["plain", "paper", "cherry", "green", "dark", "amoled"];
+		if(allThemes.includes(themeString))
+			setTheme(themeString);
+		else
+			setTheme("paper");
 	};
 
 	const applyTheme = () =>{
