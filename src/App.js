@@ -84,7 +84,7 @@ const LoadQuote = () =>{
 	console.log(quoteString);
 	return (
 		<>
-			<pre className="quote border">{quoteString + "\n\n" + "-" + quotes[quoteIdx].Person}</pre>
+			<pre className="quote border">{quoteString + "\n\n-" + quotes[quoteIdx].Person}</pre>
 		</>
 	);
 }
