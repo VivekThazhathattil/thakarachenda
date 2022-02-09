@@ -80,6 +80,9 @@ export const GlobalStyles = createGlobalStyle`
   .tin-drum{
     fill: ${props => props.theme.secColor}
   } 
+  .svg-title{
+    fill: ${props => props.theme.secColor}
+  }
   /* ---------------------------------------------------- */
   body,
   .no-style,

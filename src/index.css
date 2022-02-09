@@ -14,15 +14,7 @@
   --text-color:  #d3d3d3;
 }
 
-@font-face {
-  font-family: 'karumbi';
-  src: 
-    url('data/karumbi.ttf')
-    format('truetype');
-}
-
 h1{
-  font-family: 'karumbi';
   font-size: 10rem;
 }
 
@@ -118,6 +110,10 @@ td {
 
 details {
   cursor: pointer;
+}
+
+.svg-title{
+  padding-top: 50px;
 }
 
 .subtitle {

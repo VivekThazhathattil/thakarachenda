@@ -1,5 +1,6 @@
 import TinDrum from './data/tin-drum'
 import Horsey from './data/horsey'
+import Title from './data/title'
 
 import LoadIndex from './toc';
 import ScrollTop from "react-scrolltop-button";
@@ -78,7 +79,7 @@ function App() {
 const LoadTitle = () =>{
 	return (
 		<>
-			<h1>തകരച്ചെണ്ട</h1>
+			<Title className="svg-title" />
 			<div className="half_half">
 				<h5 className="subtitle">"അറിയാത്ത അത്ഭുതങ്ങളെ ഗർഭത്തിൽ വഹിക്കുന്ന മഹാസമുദ്രങ്ങളെക്കാൾ അറിയുന്ന നിളാനദിയെയാണ് എനിക്ക് ഇഷ്ടം" - എം ടി  വാസുദേവൻ നായർ</h5>
 				<TinDrum className="tin-drum" />
