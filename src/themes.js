@@ -99,6 +99,7 @@ export const GlobalStyles = createGlobalStyle`
   pre,
   .song-container,
   details > summary,
+  .quote,
   .stats-container{
     background: ${props => props.theme.secBg}
   }
@@ -107,7 +108,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   /* ---------------------------------------------------- */
   i,
-  .subtitle,
+  .quote,
   p,
   pre,
   .song-container,

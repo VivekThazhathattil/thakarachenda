@@ -21,6 +21,7 @@ import {
 const data = require('./data/entries.json');
 const songs = require('./data/songs.json');
 const progLang = require('./data/stats.json');
+const quotes = require('./data/quotes.json');
 
 const StyledApp = styled.div``;
 
@@ -76,13 +77,25 @@ function App() {
   );
 }
 
+const LoadQuote = () =>{
+	const quoteIdx = Math.floor(Math.random() * quotes.length);
+	let quoteString = quotes[quoteIdx].Quote;
+	quoteString = quoteString.replaceAll('_','\n');
+	console.log(quoteString);
+	return (
+		<>
+			<pre className="quote border">{quoteString + '\n\n' + '-' + quotes[quoteIdx].Person}</pre>
+		</>
+	);
+}
+
 const LoadTitle = () =>{
 	return (
 		<>
 			<Title className="svg-title" />
 			<div className="half_half">
-				<h5 className="subtitle">"അറിയാത്ത അത്ഭുതങ്ങളെ ഗർഭത്തിൽ വഹിക്കുന്ന മഹാസമുദ്രങ്ങളെക്കാൾ അറിയുന്ന നിളാനദിയെയാണ് എനിക്ക് ഇഷ്ടം" - എം ടി  വാസുദേവൻ നായർ</h5>
 				<TinDrum className="tin-drum" />
+				<LoadQuote className="quote" />
 			</div>
 		</>
 	);
