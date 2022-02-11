@@ -143,6 +143,10 @@ code{
   border: 2px solid var(--main-color);
 }
 
+.down-border{
+  border-bottom: 5px solid var(--sec-color);
+}
+
 pre {
   border-left: solid 2px var(--sec-color);
   border-radius: 15px;

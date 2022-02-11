@@ -81,10 +81,9 @@ const LoadQuote = () =>{
 	const quoteIdx = Math.floor(Math.random() * quotes.length);
 	let quoteString = quotes[quoteIdx].Quote;
 	quoteString = quoteString.replaceAll('_','\n');
-	console.log(quoteString);
 	return (
 		<>
-			<pre className="quote border">{quoteString + "\n\n-" + quotes[quoteIdx].Person}</pre>
+			<pre className="quote down-border">{quoteString + "\n\n-" + quotes[quoteIdx].Person}</pre>
 		</>
 	);
 }

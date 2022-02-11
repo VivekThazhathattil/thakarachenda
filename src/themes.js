@@ -57,6 +57,9 @@ export const GlobalStyles = createGlobalStyle`
   .border{
     border-color: ${props => props.theme.mainColor}
   }  
+  .down-border{
+    border-bottom-color: ${props => props.theme.secColor};
+  }
   .stat-bar{
     background: ${props => props.theme.mainColor}
   }
