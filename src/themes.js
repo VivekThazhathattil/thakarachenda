@@ -50,7 +50,8 @@ export const amoledTheme = {
 
 export const GlobalStyles = createGlobalStyle`
   a:link,
-  .tags
+  .tags,
+  blockquote:before
   {
     color: ${props => props.theme.mainColor}
   }
@@ -59,6 +60,9 @@ export const GlobalStyles = createGlobalStyle`
   }  
   .down-border{
     border-bottom-color: ${props => props.theme.secColor};
+  }
+  blockquote{
+    border-left-color: ${props => props.theme.secColor};
   }
   .stat-bar{
     background: ${props => props.theme.mainColor}
@@ -103,6 +107,7 @@ export const GlobalStyles = createGlobalStyle`
   .song-container,
   details > summary,
   .quote,
+  blockquote,
   .stats-container{
     background: ${props => props.theme.secBg}
   }
@@ -112,6 +117,7 @@ export const GlobalStyles = createGlobalStyle`
   /* ---------------------------------------------------- */
   i,
   .quote,
+  blockquote,
   p,
   pre,
   .song-container,
