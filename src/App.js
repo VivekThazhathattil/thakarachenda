@@ -1,11 +1,3 @@
-import TinDrum from './data/tin-drum'
-import Horsey from './data/horsey'
-import Title from './data/title'
-
-import LoadIndex from './toc';
-import ScrollTop from "react-scrolltop-button";
-import Stats from './stats';
-
 import { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { 
@@ -17,6 +9,14 @@ import {
 	greenTheme,
 	GlobalStyles
 } from './themes';
+
+import LoadIndex from './toc';
+import ScrollTop from "react-scrolltop-button";
+import Stats from './stats';
+
+import TinDrum from './data/tin-drum'
+import Horsey from './data/horsey'
+import Title from './data/title'
 
 const data = require('./data/entries.json');
 const songs = require('./data/songs.json');

@@ -201,6 +201,10 @@ p::first-letter {
   box-shadow: 2px 2px 0.5px 0.5px var(--sec-color);
 }
 
+.song-container:hover{
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
 details > summary {
   background: var(--sec-bg);
   color: var(--main-color);

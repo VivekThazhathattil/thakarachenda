@@ -149,6 +149,30 @@
     "artist" : "Gorillaz ft. Fatoumata Diawara",
     "address" : "https://www.youtube.com/watch?v=r1DR3s_esLE",
     "coverimg" : "desole.jpeg"
+  },
+  
+  {
+    "id" : 20,
+    "name" : "Bluestone Alley",
+    "artist" : "Wei Congfei",
+    "address" : "https://www.youtube.com/watch?v=WepLh_e6Tns",
+    "coverimg" : "bluestone_alley.jpeg"
+  },
+
+  {
+    "id" : 21,
+    "name" : "Shiki No Uta",
+    "artist" : "Nujabes, Minmi",
+    "address" : "https://www.youtube.com/watch?v=cNplZrRSjeI",
+    "coverimg" : "samurai_champloo.jpeg"
+  },
+
+  {
+    "id" : 22,
+    "name" : "Luv (sic) pt 3",
+    "artist" : "Nujabes ft shing02",
+    "address" : "https://www.youtube.com/watch?v=UyoYf7rZVGI",
+    "coverimg" : "luv_sic_3.jpeg"
   }
 
 ]

@@ -82,7 +82,10 @@ export const GlobalStyles = createGlobalStyle`
     border-left-color: ${props => props.theme.secColor}
   }
   .song-container{
-    box-shadow: ${props => "2px 2px 0.5px 0.5px" + props.theme.secColor};
+    box-shadow: ${props => "2px 2px 0.5px 0.5px " + props.theme.secColor};
+  }
+  .song-container:hover{
+    box-shadow: ${props => "0 5px 15px " + props.theme.secColor};
   }
   .tin-drum{
     fill: ${props => props.theme.secColor}
