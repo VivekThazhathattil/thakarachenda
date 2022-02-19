@@ -173,6 +173,14 @@
     "artist" : "Nujabes ft shing02",
     "address" : "https://www.youtube.com/watch?v=UyoYf7rZVGI",
     "coverimg" : "luv_sic_3.jpeg"
+  },
+
+  {
+    "id" : 23,
+    "name" : "Colours",
+    "artist" : "Grouplove",
+    "address" : "https://www.youtube.com/watch?v=2ddd70PMxTE",
+    "coverimg" : "colors_grouplove.jpeg"
   }
 
 ]
