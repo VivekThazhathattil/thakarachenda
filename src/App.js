@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import { 
 	plainTheme,
 	cherryTheme,
@@ -179,7 +182,10 @@ function ImagesElement({imgKey}){
 	if (imgKey === "horsey")
 		return <Horsey />
 	else
-		return <img src={"/images/" + srcAlt[0]} alt={srcAlt[1]} />
+		return <LazyLoadImage
+			src={"/images/" + srcAlt[0]} 
+			effect="blur"
+			alt={srcAlt[1]} />
 }
 
 function PreElement({str}){
