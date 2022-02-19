@@ -9,11 +9,11 @@ export const darkTheme = {
 };
 
 export const plainTheme = {
-  mainColor:  "black",
-  secColor:   "black",
+  mainColor:  "#c6393c",
+  secColor:   "#24305b",
   mainBg:     "#fff",
   secBg:      "#f2f2f2",
-  textColor:  "black",
+  textColor:  "#3a4d92",
 };
 
 export const cherryTheme = {
@@ -62,13 +62,16 @@ export const GlobalStyles = createGlobalStyle`
     border-bottom-color: ${props => props.theme.secColor};
   }
   blockquote{
-    border-left-color: ${props => props.theme.secColor};
+    border-left-color: ${props => props.theme.mainColor};
   }
   .stat-bar{
     background: ${props => props.theme.mainColor}
   }
   hr{
     border-top-color: ${props => props.theme.mainColor}
+  }
+  pre{
+    border-left-color: ${props => props.theme.mainColor}
   }
   /* ---------------------------------------------------- */
   a:visited,
@@ -77,9 +80,6 @@ export const GlobalStyles = createGlobalStyle`
   h1,
   h3 {
     color: ${props => props.theme.secColor}
-  }
-  pre{
-    border-left-color: ${props => props.theme.secColor}
   }
   .song-container{
     box-shadow: ${props => "2px 2px 0.5px 0.5px " + props.theme.secColor};
