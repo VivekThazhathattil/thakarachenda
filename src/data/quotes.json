@@ -422,5 +422,17 @@
     "id" : 70,
     "Person" : "Charlie Sheen",
     "Quote" : "Can't is the cancer of happen"
+  },
+
+  {
+    "id" : 71,
+    "Person" : "പി. കുഞ്ഞിരാമൻ നായർ",
+    "Quote" : "ബോധമില്ലാതെ കിടക്കുമവസ്ഥയ്ക്കു_മീതെയായ് ഘോരവിപത്തെന്തു ഭൂമിയില്‍?"
+  },
+
+  {
+    "id" : 72,
+    "Person" : "Steven Jay Gould",
+    "Quote" : "I am less interested in the weight of Einstein's brain, than in the certainty that people of equal talent have lived and died in cotton fields ands sweatshops."
   }
 ]
