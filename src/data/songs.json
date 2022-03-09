@@ -105,14 +105,6 @@
 
   {
     "id" : 14,
-    "name" : "കുഗ്രാമമേ - മിന്നൽ മുരളി",
-    "artist" : "Sushin Shyam",
-    "address" : "https://www.youtube.com/watch?v=ZY3oaQQVri4",
-    "coverimg" : "minnal_murali.jpeg"
-  },
-
-  {
-    "id" : 15,
     "name" : "ചില്ലാണേ - 22 Female Kottayam",
     "artist" : "Avial",
     "address" : "https://www.youtube.com/watch?v=vXDpel2qxmY",
@@ -120,7 +112,7 @@
   },
 
   {
-    "id" : 16,
+    "id" : 15,
     "name" : "Borderline",
     "artist" : "Tame Impala",
     "address" : "https://www.youtube.com/watch?v=2g5xkLqIElU",
@@ -128,7 +120,7 @@
   },
 
   {
-    "id" : 17,
+    "id" : 16,
     "name" : "Cold Heart",
     "artist" : "Elton John, Dua Lipa",
     "address" : "https://www.youtube.com/watch?v=qod03PVTLqk",
@@ -136,7 +128,7 @@
   },
 
   {
-    "id" : 18,
+    "id" : 17,
     "name" : "Sincere",
     "artist" : "Jazzanova",
     "address" : "https://www.youtube.com/watch?v=oD_ndUrhn30",
@@ -144,7 +136,7 @@
   },
 
   {
-    "id" : 19,
+    "id" : 18,
     "name" : "Désolé",
     "artist" : "Gorillaz ft. Fatoumata Diawara",
     "address" : "https://www.youtube.com/watch?v=r1DR3s_esLE",
@@ -152,7 +144,7 @@
   },
   
   {
-    "id" : 20,
+    "id" : 19,
     "name" : "Bluestone Alley",
     "artist" : "Wei Congfei",
     "address" : "https://www.youtube.com/watch?v=WepLh_e6Tns",
@@ -160,7 +152,7 @@
   },
 
   {
-    "id" : 21,
+    "id" : 20,
     "name" : "Shiki No Uta",
     "artist" : "Nujabes, Minmi",
     "address" : "https://www.youtube.com/watch?v=cNplZrRSjeI",
@@ -168,7 +160,7 @@
   },
 
   {
-    "id" : 22,
+    "id" : 21,
     "name" : "Luv (sic) pt 3",
     "artist" : "Nujabes ft shing02",
     "address" : "https://www.youtube.com/watch?v=UyoYf7rZVGI",
@@ -176,11 +168,19 @@
   },
 
   {
-    "id" : 23,
+    "id" : 22,
     "name" : "Colours",
     "artist" : "Grouplove",
     "address" : "https://www.youtube.com/watch?v=2ddd70PMxTE",
     "coverimg" : "colors_grouplove.jpeg"
+  },
+
+  {
+    "id" : 23,
+    "name" : "Cast Away",
+    "artist" : "Strange Talk",
+    "address" : "https://www.youtube.com/watch?v=SxDLd0bhhKk",
+    "coverimg" : "strange_talk.jpeg"
   }
 
 ]
