@@ -181,6 +181,22 @@
     "artist" : "Strange Talk",
     "address" : "https://www.youtube.com/watch?v=SxDLd0bhhKk",
     "coverimg" : "strange_talk.jpeg"
+  },
+
+  {
+    "id" : 24,
+    "name" : "Tens (Calmaria)",
+    "artist" : "Nana Caymmi",
+    "address" : "https://www.youtube.com/watch?v=faWKA8T3LbE",
+    "coverimg" : "tens.jpeg"
+  },
+
+  {
+    "id" : 25,
+    "name" : "The Lamp is Low",
+    "artist" : "Laurindo Almeida",
+    "address" : "https://www.youtube.com/watch?v=lkk6m14htzw",
+    "coverimg" : "lampIsLow.jpeg"
   }
 
 ]
