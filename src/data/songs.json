@@ -197,6 +197,14 @@
     "artist" : "Laurindo Almeida",
     "address" : "https://www.youtube.com/watch?v=lkk6m14htzw",
     "coverimg" : "lampIsLow.jpeg"
+  },
+
+  {
+    "id" : 26,
+    "name" : "Dissolve",
+    "artist" : "Absofacto",
+    "address" : "https://www.youtube.com/watch?v=xe2FPP4lX14",
+    "coverimg" : "dissolve.jpeg"
   }
 
 ]
