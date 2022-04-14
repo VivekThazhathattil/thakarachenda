@@ -205,6 +205,14 @@
     "artist" : "Absofacto",
     "address" : "https://www.youtube.com/watch?v=xe2FPP4lX14",
     "coverimg" : "dissolve.jpeg"
+  },
+
+  {
+    "id" : 27,
+    "name" : "You're My Best Friend",
+    "artist" : "Queen",
+    "address" : "https://www.youtube.com/watch?v=HaZpZQG2z10",
+    "coverimg" : "queenBestFriend.jpg"
   }
 
 ]
