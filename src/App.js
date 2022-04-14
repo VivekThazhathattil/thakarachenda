@@ -30,14 +30,14 @@ const StyledApp = styled.div``;
 
 function App() {
 
-	const [theme, setTheme] = useState("paper");
+	const [theme, setTheme] = useState("amoled");
 
 	const themeToggler = (themeString) =>{
 		const allThemes = ["plain", "paper", "cherry", "green", "dark", "amoled"];
 		if(allThemes.includes(themeString))
 			setTheme(themeString);
 		else
-			setTheme("paper");
+			setTheme("amoled");
 	};
 
 	const applyTheme = () =>{
@@ -67,7 +67,7 @@ function App() {
 				<button className="color-icon" style={{background: '#e6e6e6', borderColor: 'white'}} onClick={() => themeToggler('plain')} />
 				<button className="color-icon" style={{background: '#cc0022', borderColor: 'white'}} onClick={() => themeToggler('cherry')} />
 				<button className="color-icon" style={{background: '#2F5233', borderColor: 'white'}} onClick={() => themeToggler('green')} />
-				<button className="color-icon" style={{background: '#00ADB5', borderColor: 'white'}} onClick={() => themeToggler('dark')} />
+				<button className="color-icon" style={{background: '#E97ACB', borderColor: 'white'}} onClick={() => themeToggler('dark')} />
 				<button className="color-icon" style={{background: '#808080', borderColor: 'white'}} onClick={() => themeToggler('amoled')} />
 			<	LoadTitle />
 			<	Stats stats={progLang}/>

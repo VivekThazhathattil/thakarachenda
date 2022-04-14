@@ -1,10 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const darkTheme = {
-  mainColor:  "#EEEEEE",
-  secColor:   "#00ADB5",
-  mainBg:     "#393E46",
-  secBg:      "#222831",
+  mainColor:  "#7962F2",
+  secColor:   "#E97ACB",
+  mainBg:     "#221F2E",
+  secBg:      "#2F2B3F",
   textColor:  "#d3d3d3",
 };
 
@@ -41,11 +41,11 @@ export const greenTheme = {
 }
 
 export const amoledTheme = {
-  mainColor:  "#ffffff",
-  secColor:   "#808080",
-  mainBg:     "black",
-  secBg:      "#0d0d0d",
-  textColor:  "#f2f2f2",
+  mainColor:  "#31603A",
+  secColor:   "#3160AC",
+  mainBg:     "#131418",
+  secBg:      "#171A1D",
+  textColor:  "#ffffff",
 }
 
 export const GlobalStyles = createGlobalStyle`
