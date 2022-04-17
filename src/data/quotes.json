@@ -472,5 +472,17 @@
     "id" : 80,
     "Person" : "കടമ്മനിട്ട",
     "Quote" : "കണ്ണു വേണം ഇരുപുറം എപ്പോഴും_കണ്ണു വേണം മുകളിലും താഴെയും_കണ്ണിനുള്ളില്‍ കത്തി ജ്വലിക്കും_ഉള്‍ക്കണ്ണ് വേണം, അണയാത്ത കണ്ണ്.."
+  },
+
+  {
+    "id" : 81,
+    "Person" : "Rick Sanchez (Rick & Morty)",
+    "Quote" : "Your boos mean nothing, I've seen what makes you cheer."
+  },
+
+  {
+    "id" : 82,
+    "Person" : "Rick Sanchez (Rick & Morty)",
+    "Quote" : "Every breathe I take without your permission raises my self esteem"
   }
 ]
