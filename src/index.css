@@ -154,6 +154,7 @@ blockquote p {
 p,
 pre {
   color: var(--text-color);
+  word-wrap: break-word;
 }
 
 code{
