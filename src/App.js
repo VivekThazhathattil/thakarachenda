@@ -21,7 +21,7 @@ import TinDrum from './data/tin-drum'
 import Horsey from './data/horsey'
 import Title from './data/title'
 
-const data = require('./data/entries.json');
+const lookup_data = require('./data/lookup.json');
 const songs = require('./data/songs.json');
 const progLang = require('./data/stats.json');
 const quotes = require('./data/quotes.json');
@@ -123,7 +123,7 @@ function LoadData(){
 	return(
 		<>
 		{
-			data.map( (entry) =>{
+			lookup_data.slice(0,10).map( (entry) =>{
 				return <AssembleBlogDetails key={entry.id} {...entry} />
 			})
 		}
@@ -167,12 +167,13 @@ const getTag = (y, m, d, t) =>{
 	return "" + y + m + d + t.replace(':','');
 }
 
-function AssembleBlogDetails({year, month, day, time, title, text}){
+function AssembleBlogDetails({id, year, month, day, time, title}){
 	const tag = getTag(year, month, day, time);
+	const text_data = require('./data/entries/' + id + '.json');
 	return(
 		<>
 		<h3 id={tag}>{day}/{month}/{year} - {time} - {title}</h3>
-		<MakeParagraphs text={text}/>
+		<MakeParagraphs text={text_data.text}/>
 		</>
 	);
 }

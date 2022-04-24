@@ -1,6 +1,6 @@
 import * as React from "react"
 
-const data = require('./data/entries.json');
+const lookup_data = require('./data/lookup.json');
 
 const num2Str_month = {
 	"1": "ജനുവരി",
@@ -30,7 +30,7 @@ const createDirectory = () =>{
 	let ymdnt = {};
 	let ymdntime = {};
 
-	data.forEach( (entry) => {
+	lookup_data.forEach( (entry) => {
 		const y = entry.year;
 		const ym = entry.year + "" + entry.month;
 		const ymd = "" + entry.year + entry.month + entry.day;
