@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage, LazyLoadComponent } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import { 
@@ -173,7 +173,9 @@ function AssembleBlogDetails({id, year, month, day, time, title}){
 	return(
 		<>
 		<h3 id={tag}>{day}/{month}/{year} - {time} - {title}</h3>
-		<MakeParagraphs text={text_data.text}/>
+		<LazyLoadComponent>
+			<MakeParagraphs text={text_data.text}/>
+		</LazyLoadComponent>
 		</>
 	);
 }
