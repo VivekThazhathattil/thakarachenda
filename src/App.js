@@ -144,17 +144,19 @@ function LoadSongData(){
 						color: "white",
 				}
 				return (
-					<div className="song-container" style={divStyle} key={idx}>
-						<h3>
-						<a className="no-style" href={song.address} target="_blank" rel="noreferrer">
-						{song.name}						
-						</a>
-						</h3>
-						<hr />
-						<h4>
-						{song.artist}
-						</h4>
-					</div>
+					<LazyLoadComponent key={idx}>
+						<div className="song-container" style={divStyle}>
+							<h3>
+							<a className="no-style" href={song.address} target="_blank" rel="noreferrer">
+							{song.name}						
+							</a>
+							</h3>
+							<hr />
+							<h4>
+							{song.artist}
+							</h4>
+						</div>
+					</LazyLoadComponent>
 				);
 			})	
 		}
