@@ -123,7 +123,7 @@ function LoadData(){
 	return(
 		<>
 		{
-			lookup_data.slice(0,10).map( (entry) =>{
+			lookup_data.map( (entry) =>{
 				return <AssembleBlogDetails key={entry.id} {...entry} />
 			})
 		}
