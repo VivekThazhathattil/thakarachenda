@@ -1,0 +1,13 @@
+{
+    "id": 140,
+    "year": 2021,
+    "month": 12,
+    "day": 27,
+    "time": "23:20",
+    "title": "വെറുതെ ഒരു ആമുഖം",
+    "text": [
+        "നമ്മളുടെ കയ്യിൽ ഒരു n length ഉള്ള regular bracket sequence ഉണ്ട്. ആ sequence-ൽ നിന്നും നമ്മൾ k length ഉള്ള (k <= n) ഒരു regular bracket subsequence  കണ്ടുപിടിക്കണം. k-യും n-ന്നും even numbers ആണെന്ന് തന്നിട്ടുണ്ട്. എങ്ങനെ ഉത്തരം കണ്ടുപിടിക്കും?",
+        "ഉത്തരം സിമ്പിൾ ആണ്. തന്നിട്ടുള്ള sequence-സും കണ്ടുപിടിക്കേണ്ട sequence-സും regular ആയത് കൊണ്ടാണ് ഇത്ര simple ആയിട്ട് solve ചെയ്യാൻ നമുക്ക് സാധിക്കുന്നത്. ആദ്യം തന്നെ നമ്മൾ തന്നിരിക്കുന്ന sequence string-ന്റെ k/2-ആമത്തെ open bracket '(' വരെയുള്ള substring അങ്ങോട്ട് എടുക്കുക. എന്നിട്ട് കിട്ടുന്ന substring-ന്റെ right end-ലേക്ക് k - substring_length എണ്ണം closing brackets ')' ചേർക്കുക. അത്രേയുള്ളൂ കാര്യം.",
+        "ഉദാഹരണം: ഇപ്പൊ input regular bracket sequence (()(())) ആണെന്ന് കരുതുക. String-ന്റെ length 8 ആണ്. suppose നമ്മൾക്ക് വേണ്ട subsequence-ന്റെ length 6 ആണെങ്കിൽ നമ്മൾ മൂന്നാമത്തെ (6/2 = 3) opening bracket വരെയുള്ള (inclusive) substring എടുക്കും. ഈ case-ൽ ആ substring '(()(' ആണ്. ഈ substring-ന് length 4 ആണ്. അത് കൊണ്ട് ബാക്കിയുള്ള 6 - 4 = 2 characters closing bracket വച്ച് കൊടുക്കുക. അതോടെ നമുക്ക് വേണ്ട ഉത്തരം കിട്ടും - (()())."
+    ]
+}
