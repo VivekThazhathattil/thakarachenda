@@ -484,5 +484,11 @@
     "id" : 82,
     "Person" : "Rick Sanchez (Rick & Morty)",
     "Quote" : "Every breath I take without your permission raises my self esteem"
+  },
+
+  {
+    "id" : 83,
+    "Person" : "കുഞ്ഞുണ്ണി മാഷ്‌",
+    "Quote" : "പിന്നോട്ടു മാത്രം മടങ്ങുന്ന കാലുകൊണ്ടല്ലയോ_മുന്നോട്ടു പായുന്നിതാളുകൾ"
   }
 ]
