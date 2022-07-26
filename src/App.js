@@ -174,7 +174,9 @@ function AssembleBlogDetails({id, year, month, day, time, title}){
 	const text_data = require('./data/entries/' + id + '.json');
 	return(
 		<>
-		<h3 id={tag}>{day}/{month}/{year} - {time} - {title}</h3>
+		<h3 id={tag} className="h3-title">{title}</h3>
+		<p id={tag} className="no-capital colored-p">{day}/{month}/{year} - ({time})</p>
+		<hr />
 		<LazyLoadComponent>
 			<MakeParagraphs text={text_data.text}/>
 		</LazyLoadComponent>

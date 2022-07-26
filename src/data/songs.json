@@ -213,6 +213,14 @@
     "artist" : "Queen",
     "address" : "https://www.youtube.com/watch?v=HaZpZQG2z10",
     "coverimg" : "queenBestFriend.jpg"
+  },
+
+  {
+    "id" : 28,
+    "name" : "Summert Nights",
+    "artist" : "SIAMÉS",
+    "address" : "https://www.youtube.com/watch?v=hM7Eh0gGNKA",
+    "coverimg" : "summerNights.jpg"
   }
 
 ]

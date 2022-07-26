@@ -51,6 +51,8 @@ export const amoledTheme = {
 export const GlobalStyles = createGlobalStyle`
   a:link,
   .tags,
+  .colored-p,
+  .colored-p::first-letter,
   blockquote:before
   {
     color: ${props => props.theme.mainColor}
@@ -74,13 +76,16 @@ export const GlobalStyles = createGlobalStyle`
     border-left-color: ${props => props.theme.mainColor}
   }
   /* ---------------------------------------------------- */
+  
   a:visited,
   code,
-  p::first-letter,
   h1,
+  h2,
+  h5,
   h3 {
     color: ${props => props.theme.secColor}
   }
+
   .song-container{
     box-shadow: ${props => "2px 2px 0.5px 0.5px " + props.theme.secColor};
   }
