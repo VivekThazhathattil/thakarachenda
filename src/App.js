@@ -189,10 +189,14 @@ function ImagesElement({imgKey}){
 	if (imgKey === "horsey")
 		return <Horsey />
 	else
-		return <LazyLoadImage
-			src={"/images/" + srcAlt[0]} 
-			effect="blur"
-			alt={srcAlt[1]} />
+		return (
+			<div className="center-image">
+				<LazyLoadImage
+					src={"/images/" + srcAlt[0]} 
+					effect="blur"
+					alt={srcAlt[1]} />
+			</div>
+		);
 }
 
 function PreElement({str}){
