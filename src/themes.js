@@ -75,8 +75,12 @@ export const GlobalStyles = createGlobalStyle`
   pre{
     border-left-color: ${(props) => props.theme.mainColor}
   }
+  .tin-drum{
+    fill: ${(props) => props.theme.mainColor}
+  } 
+
   /* ---------------------------------------------------- */
-  
+
   a:visited,
   code,
   h1,
@@ -92,9 +96,6 @@ export const GlobalStyles = createGlobalStyle`
   .song-container:hover{
     box-shadow: ${(props) => "0 5px 15px " + props.theme.secColor};
   }
-  .tin-drum{
-    fill: ${(props) => props.theme.secColor}
-  } 
   .svg-title{
     fill: ${(props) => props.theme.secColor}
   }

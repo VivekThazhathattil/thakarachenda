@@ -105,6 +105,32 @@ td {
 .tin-drum {
   max-width: 200px;
   max-height: 200px;
+  margin: auto;
+}
+
+.animate-colors {
+  animation: animate-colors 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animate-colors {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.row-column-flex {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .horsey {
@@ -344,6 +370,10 @@ hr {
 
   .stats-container {
     max-width: 100%;
+  }
+
+  .row-column-flex {
+    flex-direction: column;
   }
 
   .stat {

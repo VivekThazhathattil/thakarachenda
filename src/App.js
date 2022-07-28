@@ -20,7 +20,8 @@ import LoadIndex from "./toc";
 import ScrollTop from "react-scrolltop-button";
 import Stats from "./stats";
 
-import TinDrum from "./data/tin-drum";
+/*import TinDrum from "./data/tin-drum";*/
+import Tbh from "./data/tbh";
 import Horsey from "./data/horsey";
 import Title from "./data/title";
 
@@ -131,9 +132,11 @@ const LoadQuote = () => {
 const LoadTitle = () => {
   return (
     <>
-      <Title className="svg-title" />
+      <div className="row-column-flex">
+        <Tbh className="tin-drum animate-colors" />
+        <Title className="svg-title" />
+      </div>
       <div className="half_half">
-        <TinDrum className="tin-drum" />
         <Stats stats={progLang} />
         <LoadQuote className="quote" />
       </div>
