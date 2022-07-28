@@ -1,29 +1,29 @@
 [
-	{
-    "name": "C/C++", 
-    "amount": 15, 
+  {
+    "name": "C/C++",
+    "amount": 15,
     "color": "chocolate"
-  }, 
+  },
 
-	{
+  {
     "name": "Python",
     "amount": 20,
     "color": "crimson"
   },
 
-	{
-    "name": "Java", 
-    "amount": 10, 
+  {
+    "name": "Java",
+    "amount": 10,
     "color": "darkolivegreen"
   },
-	{
-    "name": "എടുത്തുചാട്ടം", 
-    "amount": 32, 
-    "color":"limegreen"
+  {
+    "name": "എടുത്തുചാട്ടം",
+    "amount": 32,
+    "color": "limegreen"
   },
-	{
-    "name": "മണ്ടത്തരം", 
-    "amount": 95, 
-    "color":"darkslateblue"
+  {
+    "name": "മണ്ടത്തരം",
+    "amount": 95,
+    "color": "darkslateblue"
   }
 ]

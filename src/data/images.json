@@ -1,42 +1,41 @@
 [
   {
-    "id" : 1,
-    "name" : "A Play In A Chess",
-    "artist" : "Georgy Kurasov",
-		"year": "2002",
-    "address" : "APlayInAChess.webp"
+    "id": 1,
+    "name": "A Play In A Chess",
+    "artist": "Georgy Kurasov",
+    "year": "2002",
+    "address": "APlayInAChess.webp"
   },
 
   {
-    "id" : 2,
-    "name" : "CHESS",
-    "artist" : "Chie Yoshii",
-		"year": "2018",
-    "address" : "CHESS.webp"
-  },
-	
-  {
-    "id" : 3,
-    "name" : "Mushroom Chess Set",
-    "artist" : "loiseaujoli (Reddit)",
-		"year": "2021",
-    "address" : "mushroomChessSet.webp"
+    "id": 2,
+    "name": "CHESS",
+    "artist": "Chie Yoshii",
+    "year": "2018",
+    "address": "CHESS.webp"
   },
 
   {
-    "id" : 4,
-    "name" : "Chess",
-    "artist" : "Hsu Tung Han",
-		"year": "2018",
-    "address" : "Chess.webp"
+    "id": 3,
+    "name": "Mushroom Chess Set",
+    "artist": "loiseaujoli (Reddit)",
+    "year": "2021",
+    "address": "mushroomChessSet.webp"
   },
 
   {
-    "id" : 5,
-    "name" : "A Surprise Move",
-    "artist" : "Jonathan Wolstenholme",
-		"year": "2004",
-    "address" : "ASurpriseMove.jpg"
+    "id": 4,
+    "name": "Chess",
+    "artist": "Hsu Tung Han",
+    "year": "2018",
+    "address": "Chess.webp"
+  },
+
+  {
+    "id": 5,
+    "name": "A Surprise Move",
+    "artist": "Jonathan Wolstenholme",
+    "year": "2004",
+    "address": "ASurpriseMove.jpg"
   }
 ]
-

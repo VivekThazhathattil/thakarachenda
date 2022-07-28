@@ -6,34 +6,38 @@
   --text-color:  #444445;
 } */
 
-:root{
-  --main-color:  #EEEEEE;
-  --sec-color:   #00ADB5;
-  --main-bg:     #393E46;
-  --sec-bg:      #222831;
-  --text-color:  #d3d3d3;
+:root {
+  --main-color: #eeeeee;
+  --sec-color: #00adb5;
+  --main-bg: #393e46;
+  --sec-bg: #222831;
+  --text-color: #d3d3d3;
 }
 
 button,
 textarea,
 input,
 select,
-a{
- -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
- -webkit-tap-highlight-color: transparent;
- -webkit-user-select: none;
- -khtml-user-select: none;
- -moz-user-select: none;
- -ms-user-select: none;
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
-
 }
 
-h1{
+h1 {
   font-size: 10rem;
+  font-weight: 500;
 }
 
-i{
+h3 {
+  font-size: x-large;
+}
+
+i {
   color: var(--text-color);
 }
 
@@ -47,14 +51,14 @@ body {
   font-size: 1.2rem;
 }
 
-img{
+img {
   border-radius: 20px;
   box-shadow: 5px 5px 2.5px var(--sec-bg);
   margin: 5px;
   max-height: 400px;
 }
 
-.center-image{
+.center-image {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -134,7 +138,7 @@ details {
   cursor: pointer;
 }
 
-.svg-title{
+.svg-title {
   padding-top: 50px;
 }
 
@@ -159,7 +163,7 @@ blockquote {
   border-radius: 10px;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
-  quotes: "\201C","\201D","\2018","\2019";
+  quotes: "\201C", "\201D", "\2018", "\2019";
 }
 blockquote:before {
   color: var(--sec-color);
@@ -177,9 +181,10 @@ p,
 pre {
   color: var(--text-color);
   word-wrap: break-word;
+  font-weight: 500;
 }
 
-code{
+code {
   color: var(--sec-color);
 }
 
@@ -187,7 +192,7 @@ code{
   border: 2px solid var(--main-color);
 }
 
-.down-border{
+.down-border {
   border-bottom: 5px solid var(--sec-color);
 }
 
@@ -218,17 +223,17 @@ p::first-letter {
   margin-left: 0;
 }
 
-.colored-p{
-  margin:0;
+.colored-p {
+  margin: 0;
   font-size: 75%;
 }
 
-.h3-title{
+.h3-title {
   margin-top: 5rem;
   margin-bottom: -0.25rem;
 }
 
-p{
+p {
   margin-bottom: 2.5rem;
 }
 
@@ -243,8 +248,8 @@ p{
   box-shadow: 2px 2px 0.5px 0.5px var(--sec-color);
 }
 
-.song-container:hover{
-  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+.song-container:hover {
+  box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
 }
 
 details > summary {
@@ -268,6 +273,11 @@ details > ul {
   border-radius: 10px;
   background: var(--sec-bg);
   padding: 5px;
+  margin: 5rem 0 0 0;
+}
+
+.toc-container {
+  margin: 0;
 }
 
 .stat {
@@ -303,7 +313,7 @@ hr {
   border-top: 2px solid var(--main-color);
 }
 
-.color-icon{
+.color-icon {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -320,7 +330,7 @@ hr {
     margin: auto;
   }
 
-  h1{
+  h1 {
     font-size: 6.5rem;
   }
 
